@@ -1,3 +1,4 @@
+import Card from "@/components/Card";
 import HomeScreen from "@/components/HomeScreen";
 
 export default function Home() {
