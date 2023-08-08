@@ -20,13 +20,6 @@ export default function HomeScreen() {
     color: white;
   `;
 
-  const card = css`
-    width: 80vw;
-    height: 40px;
-    padding: 4px;
-    border: 1px solid;
-  `;
-
   return (
     <div css={home}>
       <div css={appBar}>
