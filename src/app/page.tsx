@@ -1,4 +1,4 @@
-import Card from "@/components/Card";
+"use client";
 import HomeScreen from "@/components/HomeScreen";
 
 export default function Home() {

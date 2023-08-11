@@ -1,12 +1,14 @@
 /** @jsxImportSource @emotion/react */
 "use client";
 import { jsx, css } from "@emotion/react";
-import Card from "./Card";
+import CardContainer from "./home/card/CardContainer";
+import FloatButtonContainer from "./home/floatButton/FloatButtonContainer";
+import HomeSearchContainer from "./home/search/HomeSearchContainer";
 
 export default function HomeScreen() {
   const home = css`
-    width: 100vw;
-    height: 100vh;
+    // width: 100vw;
+    // height: 100vh;
   `;
 
   const appBar = css`
@@ -22,13 +24,12 @@ export default function HomeScreen() {
 
   return (
     <div css={home}>
-      <div css={appBar}>
-        <span>app bar</span>
-      </div>
-      <Card title="Query" content="어려워"></Card>
-      <Card title="Query" content="어려워"></Card>
-      <Card title="Query" content="어려워"></Card>
-      <Card title="Query" content="어려워"></Card>
+      <HomeSearchContainer />
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <FloatButtonContainer />
     </div>
   );
 }
