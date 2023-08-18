@@ -1,9 +1,10 @@
+"use client";
 import FloatButtonView from "./FloatButtonView";
 
-export default function FloatButtonContainer() {
-  const floatButtonProp = {
-    link: "/card/add",
-  };
+const floatButtonProp = {
+  link: "/card/add",
+};
 
+export default function FloatButtonContainer() {
   return <FloatButtonView {...floatButtonProp} />;
 }
