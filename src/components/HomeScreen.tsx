@@ -1,17 +1,24 @@
 /** @jsxImportSource @emotion/react */
 "use client";
 import { jsx, css } from "@emotion/react";
+import CardContainer from "./home/card/CardContainer";
+import FloatButtonContainer from "./home/floatButton/FloatButtonContainer";
+import HomeAppBarContainer from "./home/appBar/HomeAppBarContainer";
 
 export default function HomeScreen() {
   const home = css`
-    width: 50vw;
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: darkgreen;
-    color: turquoise;
+    // width: 100vw;
+    // height: 100vh;
   `;
 
-  return <div css={home}>HomeScreen</div>;
+  return (
+    <section css={home}>
+      <HomeAppBarContainer />
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <CardContainer title="Query" content="어려워"></CardContainer>
+      <FloatButtonContainer />
+    </section>
+  );
 }
